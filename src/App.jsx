@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Gemini from "./api/Gemini"; // using your existing Gemini class
+import Gemini from "./api/Gemini"; 
 
 function App() {
   const [userInput, setUserInput] = useState("");
   const [aiText, setAiText] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // function to call Gemini API
+  
   const generateAIText = async (text) => {
     try {
       setLoading(true);
@@ -16,7 +16,7 @@ function App() {
         message: `Continue this sentence naturally: "${text}"`,
       });
 
-      // log + set AI generated content
+    
       console.log("AI response =>", result);
       setAiText(result);
     } catch (err) {
@@ -26,7 +26,7 @@ function App() {
     }
   };
 
-  // Debounce logic - wait 1.5s after user stops typing
+  
   useEffect(() => {
     if (!userInput.trim()) {
       setAiText("");
@@ -42,7 +42,7 @@ function App() {
 
   const handleChange = (e) => {
     setUserInput(e.target.value);
-    setAiText(""); // clear AI suggestion when typing again
+    setAiText(""); 
   };
 
   return (
