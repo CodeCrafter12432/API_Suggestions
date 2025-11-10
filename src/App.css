@@ -1,0 +1,60 @@
+/* Make body and html take up full screen and remove default margin */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #7fb4ff; /* fallback in case .app doesn’t cover */
+}
+
+/* Center everything */
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+  height: 100vh;             /* full screen height */
+  width: 100vw;              /* full screen width */
+  background-color: #7fb4ff; /* blue background for entire screen */
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* Text area styling */
+textarea {
+  width: 60%;
+  height: 120px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  resize: none;
+  outline: none;
+  background-color: #a7bca2;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* AI output styling */
+.output {
+  margin-top: 20px;
+  background-color: #213547;
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+}
+
+.user-text {
+  color: #b5d2a7;
+  font-weight: 600;
+}
+
+.ai-text {
+  color: #fff;
+  font-weight: 700;
+}
+
+.loading {
+  color: #fff;
+  margin-top: 10px;
+}

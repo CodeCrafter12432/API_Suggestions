@@ -1,0 +1,1 @@
+export const context = 'you will get incomplete statement, your job is to complete the sentence and give the test back, one and short line, just give remaniang statement not the entire satement as output';
