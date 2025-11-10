@@ -1,26 +1,26 @@
-/* Make body and html take up full screen and remove default margin */
+
 html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #7fb4ff; /* fallback in case .app doesn’t cover */
+  background-color: #7fb4ff; 
 }
 
-/* Center everything */
+
 .app {
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* vertical center */
-  align-items: center;       /* horizontal center */
-  height: 100vh;             /* full screen height */
-  width: 100vw;              /* full screen width */
-  background-color: #7fb4ff; /* blue background for entire screen */
+  justify-content: center;   
+  align-items: center;       
+  height: 100vh;             
+  width: 100vw;             
+  background-color: #7fb4ff; 
   color: #fff;
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
-/* Text area styling */
+
 textarea {
   width: 60%;
   height: 120px;
@@ -35,7 +35,7 @@ textarea {
   margin-top: 20px;
 }
 
-/* AI output styling */
+
 .output {
   margin-top: 20px;
   background-color: #213547;
